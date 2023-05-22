@@ -7,6 +7,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' href='style/home-style.css'/>
     <script src="scripts/home-movies.js" defer></script>
     <title>Accueil</title>
 </head>
@@ -17,14 +18,24 @@
         <label for="recherche"></label>
         <input id="search" name="recherche" type="text" placeholder="recherche">
     </nav>
-    <div class="search">
-        <h2>Résultat de recherche</h2>
-    </div>
-    <div class="trending-movies">
-        <h2>Les films tendances</h2>
-    </div>
-    <div class="trending-series">
-        <h2>Les series tendances</h2>
+    <div class="content-home">
+        <div>
+            <h2 class='home-title'>Les films tendances</h2>
+            <div class='trending-movies'>
+            </div>
+        </div>
+       <div>
+           <h2 class='home-title'>Les series tendances</h2>
+           <div class='trending-series'>
+           </div>
+       </div>
+
+        <div>
+            <h2 class='home-title'>Résultat de recherche</h2>
+            <div class='search'>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
