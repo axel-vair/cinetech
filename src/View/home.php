@@ -15,9 +15,16 @@
         <a href="movies">Films</a>
         <a href="series">Series</a>
         <label for="recherche"></label>
-        <input name="recherche" type="text" placeholder="recherche">
+        <input id="search" name="recherche" type="text" placeholder="recherche">
     </nav>
-    <div class="trending-movies"></div>
-    <div class="trending-series"></div>
+    <div class="search">
+        <h2>Résultat de recherche</h2>
+    </div>
+    <div class="trending-movies">
+        <h2>Les films tendances</h2>
+    </div>
+    <div class="trending-series">
+        <h2>Les series tendances</h2>
+    </div>
 </body>
 </html>
