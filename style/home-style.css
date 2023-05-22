@@ -1,0 +1,75 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #2c2b2b;
+    font-family: Geneva;
+    font-weight: bold;
+
+    --main-color-links: #b6b3b3;
+}
+
+/* Nav Bar */
+
+a {
+    color: var(--main-color-links);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ececec;
+}
+/* Search Bar */
+
+#search {
+    background: #444343;
+    border-radius: 20px;
+    border: #696767;
+    padding: 0.4rem;
+    color: var(--main-color-links);
+}
+
+/* Display Movies & Series */
+
+.content-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--main-color-links);
+}
+.trending-movies, .trending-series {
+    display: flex;
+    list-style: none;
+    margin: 0.3rem 0.2rem;
+    padding: 0.5rem 0.5rem;
+    max-width: 98vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.trending-series::-webkit-scrollbar, .trending-movies::-webkit-scrollbar  {
+    display: none;
+
+}
+
+
+
+.poster {
+    width: 280px;
+    height: 100%;
+    margin: 0.5rem 0.5rem;
+    transition: ease 200ms;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+}
+
+.poster:hover{
+    transform: scale(1.02);
+}
